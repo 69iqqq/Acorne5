@@ -23,7 +23,7 @@
 
         Qoute {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <21 20>;
+            key-positions = <21 22>;
         };
 
         tab {
@@ -43,7 +43,7 @@
 
         v {
             bindings = <&kp V>;
-            key-positions = <29 28>;
+            key-positions = <27 26>;
         };
     };
 
