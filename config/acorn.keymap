@@ -10,6 +10,7 @@
 };
 
 &lt { tapping-term-ms = <400>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -17,7 +18,32 @@
         combo_studio_unlock {
             timeout-ms = <50>;
             key-positions = <0 1>;
-            bindings = <&studio_unlock>;
+            bindings = <&kp TAB>;
+        };
+
+        Qoute {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <22 21>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 14>;
+        };
+
+        rightbrace {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <9 10>;
+        };
+
+        leftbbrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <8 9>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <29 28>;
         };
     };
 
@@ -35,10 +61,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &lt 1 ESCAPE  &lt 2 ENTER  &kp SPACE  &kp BSPC       &kp LALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R         &kp T        &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F         &kp G        &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V         &kp B        &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &lt 1 ESCAPE  &lt 2 ENTER  &kp SPACE  &kp BSPC  &kp LALT
             >;
         };
 
